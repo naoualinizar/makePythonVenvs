@@ -30,8 +30,7 @@
 
   - name: Initiate virtualenv
     pip:
-      name: "{{ venv }}"
-      virtualenv: /opt/python/{{ venv }}
+      name: "{{ venv }}=={{ version }}"
+      virtualenv: /opt/python/{{ venv }}{{version}}
       virtualenv_command: /usr/bin/python3.6 -m venv
-        #executable: pip3
-      
+            
