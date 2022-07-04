@@ -1,6 +1,6 @@
 ---
 - name: install and update python virtual environment
-  hosts: localhost
+  hosts: testServer 
   remote_user: cyborg
   become: yes
 
