@@ -22,6 +22,7 @@ jobs:
           playbook: virtualenv.yml
           # Optional, directory where playbooks live
           directory: ./
+          key: ${{secrets.SSH_PRIVATE_KEY}}
           # Optional, literal inventory file contents
           inventory: |
             [all]
